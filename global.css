@@ -1,0 +1,596 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+p, h1, h2, h3, h4 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+:root {
+
+    --gta-column-left-width: 260px;
+    --gta-primary: rgb(209, 125, 22);
+    --gta-horizontal-bar: rgb(82, 82, 84);
+    --gta-font-strong-contrast: rgb(0, 0, 0);
+    --gta-font-low-contrast: rgb(90, 90, 90);
+    --gta-button-ok: rgb(209, 125, 22);
+    --gta-button-ok-hover: rgb(20, 132, 61);
+    --gta-button-cancel: rgb(116, 116, 116);
+    --gta-button-cancel-hover:rgb(143, 45, 45);
+    
+    --gta-black: rgb(0, 0, 0);
+    --gta-grey-100: rgb(40, 40, 40);
+    --gta-grey-200: rgb(60, 60, 60);
+    --gta-grey-300: rgb(80, 80, 80);
+    --gta-grey-400: rgb(128, 128, 128);
+    --gta-grey-500: rgb(140, 140, 140);
+    --gta-grey-600: rgb(170, 170, 170);
+    --gta-grey-700: rgb(200, 200, 200);
+    --gta-grey-800: rgb(220, 220, 220);
+    --gta-grey-900: rgb(240, 240, 240);
+  }
+
+  body {
+    min-height: 100%;
+    max-height: 100%;
+    background-color: var(--gta-grey-900);
+	color: rgb(128, 128, 128);
+	font-size: 15px;
+	box-sizing: border-box;
+	font-family: 'Khula', sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    color: var(--gta-font-strong-contrast);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.gta-logo {
+    background-image: url("img/common/logo_chosen_one.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.gta-logo-box {
+    width: 195px;
+    height: 180px;
+    transform: translateY(280px);
+}
+
+.gta-logo-box-right {
+    position:absolute;
+    top: 30px;
+    right:30px;
+    width: 110px;
+    height:104px;
+    cursor: pointer;
+}
+
+.gta-top-container {
+    display:grid;
+    position: relative;
+    grid-template-columns: auto 1200px auto;
+    background-color: rgb(0, 0, 0);
+    width:100%;
+}
+
+.gta-top {
+    background-image: url("img/common/gta_hero.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.gta-login-form-container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gta-login-form {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 0px rgba(176,173,173,0.75);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(176,173,173,0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(176,173,173,0.75);
+}
+
+.gta-login-form-headline {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gta-primary);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+
+.gta-login-button {
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding: 9px 18px 3px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select:none;
+    cursor:default;
+    justify-self: right;
+    align-self: flex-start;
+}
+
+.gta-login-button:hover {
+    background-color: var(--gta-primary);
+    color: var(--gta-font-strong-contrast);
+}
+
+.gta-content-container {
+    display:grid;
+    grid-template-columns: auto 1200px auto;
+    width:100%;
+}
+
+.gta-content-grid {
+    display:grid;
+    grid-template-columns: 260px auto 320px;
+    width: 100%;
+}
+
+.gta-column-left {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.gta-column-center {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.gta-column-right {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.gta-columns-top {
+    width: 100%;
+    height: 4px;
+    margin-bottom:24px;
+}
+
+.gta-column-left-top {
+    background-color: var(--gta-horizontal-bar);
+}
+
+.gta-column-center-top {
+    background-color: var(--gta-horizontal-bar);
+}
+
+.gta-column-right-top {
+    background-color: var(--gta-horizontal-bar);
+}
+
+
+/********************* Skills **********************/
+
+.gta-skills-headline {
+    font-size: 18px;
+    color: var(--gta-font-strong-contrast);
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.gta-skills-container {
+    width: 100%;
+}
+
+.gta-skill-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gta-skill-label {
+    color: var(--gta-font-strong-contrast);
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.gta-skill-bar {
+    background-color: var(--gta-primary);
+    min-height: 8px;
+}
+
+/********************* Wisdom box *********************/
+
+.gta-wisdom-container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.gta-wisdom-top {
+    background-color: var(--gta-horizontal-bar);
+}
+
+.gta-wisdom-text-box {
+    color: white;
+    background-color: rgb(86, 85, 85);
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+}
+
+
+/********************* User *********************/
+
+.gta-user-row-container {
+    display:grid;
+    grid-template-columns: auto 1200px auto;
+    width:100%;
+}
+
+.gta-user-row-grid {
+    display:grid;
+    grid-template-columns: var(--gta-column-left-width) auto;
+    width:100%;
+}
+
+.gta-user-image-big {
+    width: 200px;
+    height: 200px;
+    background-image: url("img/avatars/bird.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    border: 6px solid white;
+    background-color: #933;
+    margin-left: 30px;
+    transform: translateY(300px);
+}
+
+.gta-user-info-box-name{
+    font-size: 24px;
+    color: var(--gta-font-strong-contrast);
+    margin-bottom: 8px;
+}
+
+
+/********************* Follows *********************/
+
+.gta-follower-container {
+    padding: 2px 0px 12px 0px;
+    margin-bottom: 6px;
+}
+
+.gta-follower-round-rect {
+    color:black;
+    display: flex;
+    position: relative;
+    width:100%;
+    max-height: 42px;
+    border-radius: 30px;
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.gta-follower-round-rect:hover {
+    background-color: var(--gta-primary);
+    color:white;
+}
+
+.gta-follower-round-image {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    margin-right:16px;
+    background-image: url("img/common/logo_chosen_one.png");
+    background-size: cover;
+    transform: translateY(-6px);
+}
+
+.gta-follower-text {
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+
+/*+*****************  buttons  *******************/
+
+.gta-btn {
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding: 7px 12px 1px 12px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select:none;
+    cursor:pointer;
+}
+
+.gta-ok-btn {
+    color:rgb(255, 255, 255);
+    background-color: var(--gta-button-ok);
+}
+
+.gta-ok-btn:hover {
+    color:rgb(255, 255, 255);
+    background-color: var(--gta-button-ok-hover);
+}
+
+.gta-cancel-btn {
+    color:rgb(255, 255, 255);
+    background-color: var(--gta-button-cancel);
+    margin-left:auto;
+}
+
+.gta-cancel-btn:hover {
+    color:rgb(255, 255, 255);
+    background-color: var(--gta-button-cancel-hover);
+}
+
+.gta-follow-btn {
+    width: 140px;
+    color:white;
+    background-color: var(--gta-primary);
+    text-align: center;
+    padding: 7px 18px 1px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select:none;
+    cursor:pointer;
+    justify-self: right;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.gta-new-post-btn {
+    width: 140px;
+    background-color: var(--gta-primary);
+    color:white;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.gta-new-post-btn:hover {
+    background-color: black;
+}
+
+.gta-follow-btn:hover {
+    background-color: black;
+}
+
+
+/************** text editor ******************/
+
+.editor-char-count {
+    width: 100%;
+    font-size: 12;
+    margin: 5px 0px 0px 0px;
+}
+
+.text-editor-container {
+    position:fixed;
+    width: 480px;
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    left: calc(50% - 240px);
+    top: 35vh;
+    z-index: 1000;
+    box-shadow: 15px 14px 20px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 15px 14px 20px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 15px 14px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+/****************  posts *********************/
+
+.gta-all-posts-view {
+    background-color: rgb(255, 255, 255);
+    min-height: 200px;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+}
+
+.gta-post-container {
+    display:grid;
+    grid-template-columns: 64px auto;
+    width:100%;
+}
+
+.gta-sub-post-container {
+    display:grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    margin: 12px 0px 6px 0px;
+}
+
+.gta-post-content {
+    padding: 8px 0px 0px 0px;
+}
+
+.gta-post-head {
+    display:grid;
+    grid-template-columns: 64px auto;
+    width:100%;
+}
+
+.gta-post-image-normal {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    margin-right:16px;
+    background-image: url("img/avatars/bird.jpg");
+    background-size: cover;
+    cursor:pointer;
+}
+
+.gta-post-image-normal:hover {
+    border: 1px solid var(--gta-primary);
+}
+
+.gta-post-image-small {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    margin-right:16px;
+    background-image: url("img/avatars/bird.jpg");
+    background-size: cover;
+    transform: translateY(-2px);
+    cursor:pointer;
+}
+
+.gta-post-image-small:hover {
+    border: 1px solid var(--gta-primary);
+}
+
+.gta-post-author {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gta-font-strong-contrast);
+    user-select:none;
+    cursor:pointer;
+}
+
+.gta-post-author:hover {
+    color: var(--gta-primary);
+}
+
+.gta-post-date {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gta-font-low-contrast);
+    padding-top: 2px;
+}
+.gta-post-body-text {
+    color: var(--gta-font-strong-contrast);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 6px; 
+}
+
+/*************  news ***************/
+
+.gta-news-container {
+    margin-top: 40px;
+}
+
+.gta-news-image1 {
+    background-image: url("img/common/gta6.jpg");
+    background-size: cover;
+    height: 170px;
+    margin-bottom:10px;
+}
+
+.gta-news-image2 {
+    background-image: url("img/common/map.jpg");
+    background-size: cover;
+    height: 170px;
+    margin-bottom:10px;
+}
+
+.gta-news-text {
+    color: var(--gta-font-strong-contrast);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 1200px ){
+
+    .main-container {
+        grid-template-columns: 0 100% 0;
+    }
+    .gta-top-container {
+        grid-template-columns: 0 100% 0;
+    }
+    .gta-content-container {
+        grid-template-columns: 0 100% 0;
+    }
+    .gta-user-row-container {
+        grid-template-columns: 0 100% 0;
+    }
+    .gta-top {
+        height: 240px;
+    }
+    .gta-logo-box{
+        width: 160px;
+        height: 147px;
+        transform: translateY(140px);
+    }
+    .gta-logo-box-right {
+        right:20px;
+    }
+    .gta-column-left {
+        display:none;
+    }
+    .gta-content-grid {
+        grid-template-columns: auto 320px;
+    }
+    .gta-user-image-big {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+        transform: translateY(200px);
+    }
+    .gta-user-row-grid {
+        grid-template-columns: 170px auto;
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width: 800px ){
+
+    .gta-user-image-big {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+        transform: translateY(140px);
+    }
+    .gta-user-row-grid {
+        grid-template-columns: 0px auto;
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 600px ){
+
+    .gta-content-grid {
+        display:grid;
+        grid-template-columns: auto 0px;
+        width: 100%;
+    }
+    .gta-column-right {
+        display:none
+    }
+}
